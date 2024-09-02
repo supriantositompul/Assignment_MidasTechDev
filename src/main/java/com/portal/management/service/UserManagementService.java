@@ -32,7 +32,7 @@ public class UserManagementService {
         try {
             OurUser ourUser = new OurUser();
             ourUser.setEmail(registrationRequest.getEmail());
-            ourUser.setCity(registrationRequest.getCity());
+            ourUser.setAddress(registrationRequest.getAddress());
             ourUser.setRole(registrationRequest.getRole());
             ourUser.setName(registrationRequest.getName());
             ourUser.setPassword(passwordEncoder.encode(registrationRequest.getPassword()));
@@ -158,7 +158,7 @@ public class UserManagementService {
                 OurUser existingUser = userOptional.get();
                 existingUser.setEmail(updatedUser.getEmail());
                 existingUser.setName(updatedUser.getName());
-                existingUser.setCity(updatedUser.getCity());
+                existingUser.setAddress(updatedUser.getAddress());
                 existingUser.setRole(updatedUser.getRole());
 
                 // Check if password is present in the request

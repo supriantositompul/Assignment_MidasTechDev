@@ -24,7 +24,7 @@ public class OurUser implements UserDetails {
     private String email;
     private String name;
     private String password;
-    private String city;
+    private String address;
     private String role;
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -32,7 +32,7 @@ public class OurUser implements UserDetails {
     }
     @Override
     public String getUsername() {
-        return email;
+        return name;
     }
     @Override
     public boolean isAccountNonExpired() {

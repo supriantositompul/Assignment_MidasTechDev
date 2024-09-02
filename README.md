@@ -87,6 +87,7 @@ Endpoint : GET /admin/get-all-users
 Request Header :
 
 X-API-TOKEN : Token (Mandatory)
+
 Response Body (Success) :
 
 ```json
@@ -122,6 +123,7 @@ Endpoint : PUT /admin/update/{userId}
 Request Header :
 
 X-API-TOKEN : Token (Mandatory)
+
 Request Body :
 ```json
 {
@@ -165,6 +167,7 @@ Endpoint : PUT /admin/delete/{userId}
 Request Header :
 
 X-API-TOKEN : Token (Mandatory)
+
 Response Body :
 ``` json
 {
@@ -180,6 +183,7 @@ Endpoint : DELETE /api/auth/logout
 Request Header :
 
 X-API-TOKEN : Token (Mandatory)
+
 Response Body (Success) :
 ```json
 {

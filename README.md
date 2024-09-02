@@ -2,6 +2,7 @@
 
 ## Register User
 Endpoint : POST /auth/register
+
 Request Body :
 ```json
 {
